@@ -12,10 +12,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SiteAdapter siteAdapter = new SiteAdapter(getSupportFragmentManager(), this);
+        LocationAdapter locationAdapter = new LocationAdapter(getSupportFragmentManager(), this);
 
         ViewPager sitePager = (ViewPager) findViewById(R.id.site_pager);
-        sitePager.setAdapter(siteAdapter);
+        sitePager.setAdapter(locationAdapter);
 
         TabLayout siteTabs = (TabLayout) findViewById(R.id.site_tab);
         siteTabs.setupWithViewPager(sitePager);
