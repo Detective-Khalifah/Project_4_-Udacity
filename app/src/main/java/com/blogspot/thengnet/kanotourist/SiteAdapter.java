@@ -15,6 +15,11 @@ public class SiteAdapter extends FragmentPagerAdapter {
     }
 
     @Override
+    public int getCount () {
+        return 4;
+    }
+
+    @Override
     public Fragment getItem (int i) {
         switch (i) {
             case 0:
@@ -30,8 +35,4 @@ public class SiteAdapter extends FragmentPagerAdapter {
         }
     }
 
-    @Override
-    public int getCount () {
-        return 4;
-    }
 }
