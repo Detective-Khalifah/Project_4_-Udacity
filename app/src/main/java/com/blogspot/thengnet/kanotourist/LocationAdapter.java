@@ -29,6 +29,8 @@ public class LocationAdapter extends FragmentPagerAdapter {
             case 2:
                 return HotelsFragment.newInstance();
             case 3:
+                return RestaurantsFragment.newInstance();
+            case 4:
                 return SupermarketsFragment.newInstance();
             default:
                 return null;
@@ -45,6 +47,8 @@ public class LocationAdapter extends FragmentPagerAdapter {
             case 2:
                 return mContext.getString(R.string.fragment_hotels);
             case 3:
+                return mContext.getString(R.string.fragment_restaurants);
+            case 4:
                 return mContext.getString(R.string.fragment_supermarkets);
             default:
                 return super.getPageTitle(position);
