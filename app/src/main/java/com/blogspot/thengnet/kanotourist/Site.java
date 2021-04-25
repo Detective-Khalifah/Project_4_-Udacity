@@ -2,21 +2,19 @@ package com.blogspot.thengnet.kanotourist;
 
 public class Site {
 
-    private String mSiteName;
+    private String mSiteSummary;
     private int mImageResourceId;
 
-    public Site (String mSiteName, int mImageResourceId) {
-        this.mSiteName = mSiteName;
+    public Site (String mSiteSummary, int mImageResourceId) {
+        this.mSiteSummary = mSiteSummary;
         this.mImageResourceId = mImageResourceId;
     }
 
-    public Site setSiteName (String mSiteName) {
-        this.mSiteName = mSiteName;
-        return this;
+    public String getmSiteSummary () {
+        return mSiteSummary;
     }
 
-    public Site setImageResourceId (int mImageResourceId) {
-        this.mImageResourceId = mImageResourceId;
-        return this;
+    public int getmImageResourceId () {
+        return mImageResourceId;
     }
 }
