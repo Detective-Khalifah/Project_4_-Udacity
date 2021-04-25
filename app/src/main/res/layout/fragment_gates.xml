@@ -6,22 +6,4 @@
     android:layout_height="match_parent"
     tools:context=".GatesFragment">
 
-    <TextView
-        android:id="@+id/intro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/gates_intro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/gates_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/gates_further_read"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/intro" />
-
 </android.support.constraint.ConstraintLayout>
