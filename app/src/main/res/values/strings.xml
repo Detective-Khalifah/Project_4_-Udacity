@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Kano Tourist</string>
-    <string name="fragment_gates">Gates</string>
+    <string name="fragment_gates">Gates (Ƙofofi)</string>
     <string name="fragment_historicals">Historical Sites</string>
     <string name="fragment_supermarkets">Supermarkets</string>
     <string name="fragment_hotels">Hotels</string>
 
+    <string name="gates_intro">Fortifications built in days of old to defend these ancient mini-cities, that are now less than the size of a local government</string>
+    <string name="historicals_intro"></string>
+    <string name="hotels_intro"></string>
+    <string name="supermarkets_intro"></string>
 
+    <string name="gates_link">https://en.wikipedia.org/wiki/Gates_of_Hausa_kingdoms#Kano_Emirate</string>
+    <string name="gates_further_read">Kano Emirate Gates [click to read]</string>
 </resources>
