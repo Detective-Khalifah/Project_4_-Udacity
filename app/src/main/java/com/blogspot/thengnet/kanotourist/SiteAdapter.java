@@ -35,4 +35,19 @@ public class SiteAdapter extends FragmentPagerAdapter {
         }
     }
 
+    @Override
+    public CharSequence getPageTitle (int position) {
+        switch (position) {
+            case 0:
+                return mContext.getString(R.string.fragment_gates);
+            case 1:
+                return mContext.getString(R.string.fragment_historicals);
+            case 2:
+                return mContext.getString(R.string.fragment_hotels);
+            case 3:
+                return mContext.getString(R.string.fragment_supermarkets);
+            default:
+                return super.getPageTitle(position);
+        }
+    }
 }

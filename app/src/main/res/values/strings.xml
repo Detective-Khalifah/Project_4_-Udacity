@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Kano Tourist</string>
+    <string name="fragment_gates">Gates</string>
+    <string name="fragment_historicals">Historical Sites</string>
+    <string name="fragment_supermarkets">Supermarkets</string>
+    <string name="fragment_hotels">Hotels</string>
+
+
 </resources>
