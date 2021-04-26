@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -96,7 +97,22 @@ public class GatesFragment extends Fragment {
             }
         });
 
-        ListView listView = view.findViewById(R.id.list_gates);
+        final ListView listView = view.findViewById(R.id.list_gates);
         listView.setAdapter(new SiteAdapter(getContext(), mGateSites));
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+                Site theSite = mGateSites.get(position);
+                Intent immerse = new Intent(getActivity(), ImmersiveViewerActivity.class);
+                immerse.putExtra("SUMMARY", theSite.getSiteSummary()); // always available
+
+                if (theSite.hasImage()) {
+                    immerse.putExtra("IMG", theSite.getImageResourceId());
+                    if (theSite.hasLink())
+                        immerse.putExtra("LINK", mGateSites.get(position).getSiteLink());
+                }
+                startActivity(immerse);
+            }
+        });
     }
 }
