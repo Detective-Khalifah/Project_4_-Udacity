@@ -106,11 +106,10 @@ public class GatesFragment extends Fragment {
                 Intent immerse = new Intent(getActivity(), ImmersiveViewerActivity.class);
                 immerse.putExtra("SUMMARY", theSite.getSiteSummary()); // always available
 
-                if (theSite.hasImage()) {
+                if (theSite.hasImage())
                     immerse.putExtra("IMG", theSite.getImageResourceId());
-                    if (theSite.hasLink())
-                        immerse.putExtra("LINK", mGateSites.get(position).getSiteLink());
-                }
+                if (theSite.hasLink())
+                    immerse.putExtra("LINK", mGateSites.get(position).getSiteLink());
                 startActivity(immerse);
             }
         });
