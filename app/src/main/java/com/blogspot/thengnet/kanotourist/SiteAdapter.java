@@ -30,10 +30,12 @@ public class SiteAdapter extends ArrayAdapter<Site> {
         if (theSite.hasImage()) {
             ImageView imgSite = (ImageView) convertView.findViewById(R.id.img_site);
             imgSite.setImageResource(theSite.getImageResourceId());
+            imgSite.setVisibility(View.VISIBLE);
         }
         if (theSite.hasLink()) {
             TextView txtLink = (TextView) convertView.findViewById(R.id.txt_link);
             txtLink.setText(theSite.getSiteLink());
+            txtLink.setVisibility(View.VISIBLE);
         }
 
         return convertView;

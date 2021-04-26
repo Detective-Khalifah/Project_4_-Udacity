@@ -10,15 +10,29 @@ public class Site {
         this.mSiteSummary = mSiteSummary;
     }
 
+    /**
+     * For tourist sites with @param mSiteSummary & @param mImageResourceId only.
+     */
     public Site (String mSiteSummary, int mImageResourceId) {
         this.mSiteSummary = mSiteSummary;
         this.mImageResourceId = mImageResourceId;
     }
 
+    /**
+     * For tourist sites with @param mSiteSummary, @param mImageResourceId and @param mSiteLink.
+     */
     public Site (String mSiteSummary, int mImageResourceId, String mSiteLink) {
         this.mSiteSummary = mSiteSummary;
         this.mSiteLink = mSiteLink;
         this.mImageResourceId = mImageResourceId;
+    }
+
+    /**
+     * For tourist sites with @param siteSummary & @param siteLink only.
+     */
+    public Site (String siteSummary, String siteLink) {
+        mSiteSummary = siteSummary;
+        mSiteLink = siteLink;
     }
 
     public String getSiteSummary () {
@@ -38,6 +52,6 @@ public class Site {
     }
 
     public boolean hasLink() {
-        return (mSiteLink.equals("") ? false : true);
+        return (mSiteLink == null ? false : true);
     }
 }
