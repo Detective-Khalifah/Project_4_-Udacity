@@ -1,10 +1,17 @@
 package com.blogspot.thengnet.kanotourist;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -12,6 +19,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class EventsFragment extends Fragment {
+
+    private ArrayList<Site> mFestivalsList;
 
     public EventsFragment () {
         // Required empty public constructor
@@ -30,13 +39,40 @@ public class EventsFragment extends Fragment {
     @Override
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        mFestivalsList = new ArrayList<>();
+        mFestivalsList.add(new Site("Hawan Dause"));
+        mFestivalsList.add(new Site("Hawan Ɗorayi"));
+        mFestivalsList.add(new Site("Hawan Idi"));
+        mFestivalsList.add(new Site("Hawan Fanisau"));
+        mFestivalsList.add(new Site("Hawan Nassarawa"));
     }
 
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container,
                               Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_events, container, false);
+        return inflater.inflate(R.layout.site_listview, container, false);
+    }
+
+    @Override
+    public void onViewCreated (View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        final ListView listView = view.findViewById(R.id.list_sites);
+        listView.setAdapter(new SiteAdapter(getContext(), mFestivalsList));
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+                Site theSite = mFestivalsList.get(position);
+                Intent immerse = new Intent(getActivity(), ImmersiveViewerActivity.class);
+                immerse.putExtra("SUMMARY", theSite.getSiteSummary()); // always available
+
+                if (theSite.hasImage())
+                    immerse.putExtra("IMG", theSite.getImageResourceId());
+                if (theSite.hasLink())
+                    immerse.putExtra("LINK", mFestivalsList.get(position).getSiteLink());
+                startActivity(immerse);
+            }
+        });
     }
 }
