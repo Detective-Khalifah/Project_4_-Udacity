@@ -39,7 +39,7 @@ public class GatesFragment extends Fragment {
     public void onCreate (Bundle savedInstanceState) {
         mGateSites = new ArrayList<>();
         mGateSites.add(new Site(getString(R.string.gate_1), R.drawable.kofar_kansakali_1,
-                getString(R.string.gate_1)));
+                getString(R.string.gate_1_link)));
         mGateSites.add(new Site(getString(R.string.gate_2), getString(R.string.gate_2_link)));
         mGateSites.add(new Site(getString(R.string.gate_3), R.drawable.kofar_dawanau_3,
                 getString(R.string.gate_3_link)));
