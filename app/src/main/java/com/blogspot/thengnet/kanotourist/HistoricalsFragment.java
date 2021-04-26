@@ -44,7 +44,6 @@ public class HistoricalsFragment extends Fragment {
         historicSitesList.add(new Site("Kano Central Mosque"));
         historicSitesList.add(new Site("Gidan Dan Hausa Museum and Kano State Cultural Centre"));
         historicSitesList.add(new Site("Bashir Tofa Mosque"));
-
     }
 
     @Override
