@@ -38,6 +38,8 @@ public class GatesFragment extends Fragment {
 
     @Override
     public void onCreate (Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         mGateSites = new ArrayList<>();
         mGateSites.add(new Site(getString(R.string.gate_1), R.drawable.kofar_kansakali_1,
                 getString(R.string.gate_1_link)));
@@ -70,8 +72,6 @@ public class GatesFragment extends Fragment {
                 getString(R.string.gate_15_link)));
         mGateSites.add(new Site(getString(R.string.gate_16), getString(R.string.gate_16_link)));
         mGateSites.add(new Site(getString(R.string.gate_17), R.drawable.kofar_fada_17));
-
-        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -97,7 +97,7 @@ public class GatesFragment extends Fragment {
             }
         });
 
-        final ListView listView = view.findViewById(R.id.list_gates);
+        final ListView listView = view.findViewById(R.id.list_sites);
         listView.setAdapter(new SiteAdapter(getContext(), mGateSites));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

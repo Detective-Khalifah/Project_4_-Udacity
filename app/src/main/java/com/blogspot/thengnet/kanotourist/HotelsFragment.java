@@ -23,7 +23,6 @@ public class HotelsFragment extends Fragment {
      *
      * @return A new instance of fragment HotelsFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static HotelsFragment newInstance () {
         return new HotelsFragment();
     }

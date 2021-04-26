@@ -23,7 +23,6 @@ public class SupermarketsFragment extends Fragment {
      *
      * @return A new instance of fragment SupermarketsFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static SupermarketsFragment newInstance () {
         return new SupermarketsFragment();
     }
