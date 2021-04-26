@@ -41,10 +41,10 @@ public class RestaurantsFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mRestaurantsList = new ArrayList<>();
         mRestaurantsList.add(new Site("Cilantro Restaurant and Lounge"));
-        mRestaurantsList.add(new Site("Gusto Restaurant"));
-        mRestaurantsList.add(new Site("Waffle Shop"));
-        mRestaurantsList.add(new Site("Jalsa"));
+        mRestaurantsList.add(new Site("Chicken Republic"));
+        mRestaurantsList.add(new Site("Meena Restaurant"));
         mRestaurantsList.add(new Site("Mr. Biggs"));
+        mRestaurantsList.add(new Site("Waffle Shop"));
 
     }
 
