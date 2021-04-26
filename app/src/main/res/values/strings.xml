@@ -5,17 +5,17 @@
     <string name="fragment_gates">Gates (Ƙofofi)</string>
     <string name="fragment_historicals">Historical Sites</string>
     <string name="fragment_restaurants">Restaurants</string>
-    <string name="fragment_supermarkets">Supermarkets</string>
+    <string name="fragment_markets">Markets</string>
     <string name="fragment_hotels">Hotels</string>
 
     <string name="gates_intro">Fortifications built in days of old to defend these ancient mini-cities, that are now less than the size of a local government</string>
     <string name="gates_link">https://en.wikipedia.org/wiki/Gates_of_Hausa_kingdoms#Kano_Emirate</string>
     <string name="gates_further_read">Kano Emirate Gates [click to read]</string>
 
-    <string name="historicals_intro"></string>
-    <string name="hotels_intro"></string>
-    <string name="restaurants_intro"></string>
-    <string name="supermarkets_intro"></string>
+    <string name="historicals_intro">Landmarks of Kano - \"Ta Dabo tumbin giwa\"</string>
+    <string name="hotels_intro">Time to rest my rump…</string>
+    <string name="restaurants_intro">Let\'s eat…</string>
+    <string name="markets_intro">Kano State is one of the few places which has remarkable supermarkets besides marketplaces that trace a more-than-century old age; nice places to shop, ny the way. These bustling spots will prove it\'s the centre of commerce.</string>
 
     <string name="gate_1">Ƙofar Kansakali (1112)[image-Rumbun Ilimi]</string>
     <string name="gate_2">Ƙofar Waika (1112)</string>

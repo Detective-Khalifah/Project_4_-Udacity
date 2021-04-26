@@ -31,7 +31,7 @@ public class LocationAdapter extends FragmentPagerAdapter {
             case 3:
                 return RestaurantsFragment.newInstance();
             case 4:
-                return SupermarketsFragment.newInstance();
+                return MarketsFragment.newInstance();
             default:
                 return null;
         }
@@ -49,7 +49,7 @@ public class LocationAdapter extends FragmentPagerAdapter {
             case 3:
                 return mContext.getString(R.string.fragment_restaurants);
             case 4:
-                return mContext.getString(R.string.fragment_supermarkets);
+                return mContext.getString(R.string.fragment_markets);
             default:
                 return super.getPageTitle(position);
         }
