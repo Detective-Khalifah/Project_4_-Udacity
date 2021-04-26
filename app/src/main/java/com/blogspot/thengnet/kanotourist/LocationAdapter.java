@@ -16,7 +16,7 @@ public class LocationAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount () {
-        return 4;
+        return 6;
     }
 
     @Override
@@ -32,6 +32,8 @@ public class LocationAdapter extends FragmentPagerAdapter {
                 return RestaurantsFragment.newInstance();
             case 4:
                 return MarketsFragment.newInstance();
+            case 5:
+                return EventsFragment.newInstance();
             default:
                 return null;
         }
@@ -50,6 +52,8 @@ public class LocationAdapter extends FragmentPagerAdapter {
                 return mContext.getString(R.string.fragment_restaurants);
             case 4:
                 return mContext.getString(R.string.fragment_markets);
+            case 5:
+                return mContext.getString(R.string.fragment_events);
             default:
                 return super.getPageTitle(position);
         }

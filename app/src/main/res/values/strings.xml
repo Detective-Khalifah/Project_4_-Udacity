@@ -7,6 +7,7 @@
     <string name="fragment_restaurants">Restaurants</string>
     <string name="fragment_markets">Markets</string>
     <string name="fragment_hotels">Hotels</string>
+    <string name="fragment_events">Events</string>
 
     <string name="gates_intro">Fortifications built in days of old to defend these ancient mini-cities, that are now less than the size of a local government</string>
     <string name="gates_link">https://en.wikipedia.org/wiki/Gates_of_Hausa_kingdoms#Kano_Emirate</string>
@@ -51,5 +52,7 @@
     <string name="gate_14_link">https://www.rumbunilimi.com.ng/KanoKofarFamfo.html</string>
     <string name="gate_15_link">https://www.rumbunilimi.com.ng/kanokofarRumfa.html</string>
     <string name="gate_16_link">https://www.rumbunilimi.com.ng/kanokofaralasan.html</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
