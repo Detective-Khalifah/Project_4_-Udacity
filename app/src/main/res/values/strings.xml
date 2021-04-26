@@ -1,5 +1,7 @@
 <resources>
+    <!-- Activity & Fragment Titles -->
     <string name="app_name">Kano Tourist</string>
+    <string name="image_immerse">Immersive Mode</string>
     <string name="fragment_gates">Gates (Ƙofofi)</string>
     <string name="fragment_historicals">Historical Sites</string>
     <string name="fragment_restaurants">Restaurants</string>
@@ -7,11 +9,47 @@
     <string name="fragment_hotels">Hotels</string>
 
     <string name="gates_intro">Fortifications built in days of old to defend these ancient mini-cities, that are now less than the size of a local government</string>
+    <string name="gates_link">https://en.wikipedia.org/wiki/Gates_of_Hausa_kingdoms#Kano_Emirate</string>
+    <string name="gates_further_read">Kano Emirate Gates [click to read]</string>
+
     <string name="historicals_intro"></string>
     <string name="hotels_intro"></string>
     <string name="restaurants_intro"></string>
     <string name="supermarkets_intro"></string>
 
-    <string name="gates_link">https://en.wikipedia.org/wiki/Gates_of_Hausa_kingdoms#Kano_Emirate</string>
-    <string name="gates_further_read">Kano Emirate Gates [click to read]</string>
+    <string name="gate_1">Ƙofar Kansakali (1112)[image-Rumbun Ilimi]</string>
+    <string name="gate_2">Ƙofar Waika (1112)</string>
+    <string name="gate_3">Ƙofar Ɗanƙwai/Dawanau (1112) [image-Wikipedia]</string>
+    <string name="gate_4">Ƙofar Lunkui/Ruwa (1116) [image-Wikipedia]</string>
+    <string name="gate_5">Ƙofar Mazugal (1118)[image-Rumbun Ilimi]</string>
+    <string name="gate_6">Ƙofar Adama/Dagaci/Wambai (1118)[image-Wikipedia]</string>
+    <string name="gate_7">Ƙofar Fagge/Mata (1463)[image-Wikipedis]</string>
+    <string name="gate_8">Ƙofar Kudu/Ɗan’agundi (1472)[image-Wikipedia]</string>
+    <string name="gate_9">Ƙofar Kawaye/Nassarawa (1466)[image-Wikipedia]</string>
+    <string name="gate_10">Ƙofar Dogo/Na\'isa (1470)[image-Rumbun Ilimi]</string>
+    <string name="gate_11">Ƙofar Gadon Ƙaya (1619)[image-Wikipedia]</string>
+    <string name="gate_12">Ƙofar Dukawuya (1916)[image-Rumbun Ilimi]</string>
+    <string name="gate_13">Ƙofar Kabuga (1621)[image-Rumbun Ilimi]</string>
+    <string name="gate_14">Ƙofar Famfo (1934)[image-Rumbun Ilimi]</string>
+    <string name="gate_15">Ƙofar Rumfa/Sabuwar Ƙofa (1935)[Wikipedia]</string>
+    <string name="gate_16">Ƙofar Alasan (1937)</string>
+    <string name="gate_17">Ƙofar Fada [Wikipedia]</string>
+
+    <string name="gate_1_link">https://www.rumbunilimi.com.ng/kanokofarkansakali.html#gsc.tab=0</string>
+    <string name="gate_2_link">https://www.rumbunilimi.com.ng/kanokofarwaika.html</string>
+    <string name="gate_3_link">https://www.rumbunilimi.com.ng/kanokofardawanau.html</string>
+    <string name="gate_4_link">https://www.rumbunilimi.com.ng/kanokofarLunkui.html</string>
+    <string name="gate_5_link">https://www.rumbunilimi.com.ng/kanokofarmazugal.html</string>
+    <string name="gate_6_link">https://www.rumbunilimi.com.ng/kanokofarwambai.html</string>
+    <string name="gate_7_link">https://www.rumbunilimi.com.ng/kanokofarMata.html</string>
+    <string name="gate_8_link">https://www.rumbunilimi.com.ng/kanokofarDanagundi.html</string>
+    <string name="gate_9_link">https://www.rumbunilimi.com.ng/kanokofarNassarawa.html</string>
+    <string name="gate_10_link">https://www.rumbunilimi.com.ng/kanokofarNaisa.html</string>
+    <string name="gate_11_link">https://www.rumbunilimi.com.ng/kanokofarGadonkaya.html</string>
+    <string name="gate_12_link">https://www.rumbunilimi.com.ng/KanoKofarDukawuya.html</string>
+    <string name="gate_13_link">https://www.rumbunilimi.com.ng/KanoKofarKabuga.html</string>
+    <string name="gate_14_link">https://www.rumbunilimi.com.ng/KanoKofarFamfo.html</string>
+    <string name="gate_15_link">https://www.rumbunilimi.com.ng/kanokofarRumfa.html</string>
+    <string name="gate_16_link">https://www.rumbunilimi.com.ng/kanokofaralasan.html</string>
+
 </resources>
