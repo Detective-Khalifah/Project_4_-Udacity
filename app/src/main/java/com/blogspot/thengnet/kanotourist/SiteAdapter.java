@@ -23,11 +23,18 @@ public class SiteAdapter extends ArrayAdapter<Site> {
         }
 
         Site theSite = getItem(position);
-        ImageView imgSite = (ImageView) convertView.findViewById(R.id.img_site);
-        TextView txtSummary = (TextView) convertView.findViewById(R.id.txt_summary);
 
-        imgSite.setImageResource(theSite.getmImageResourceId());
-        txtSummary.setText(theSite.getmSiteSummary());
+        TextView txtSummary = (TextView) convertView.findViewById(R.id.txt_summary);
+        txtSummary.setText(theSite.getSiteSummary());
+
+        if (theSite.hasImage()) {
+            ImageView imgSite = (ImageView) convertView.findViewById(R.id.img_site);
+            imgSite.setImageResource(theSite.getImageResourceId());
+        }
+        if (theSite.hasLink()) {
+            TextView txtLink = (TextView) convertView.findViewById(R.id.txt_link);
+            txtLink.setText(theSite.getSiteLink());
+        }
 
         return convertView;
     }

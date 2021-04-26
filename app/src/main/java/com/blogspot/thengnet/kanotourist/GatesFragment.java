@@ -35,8 +35,12 @@ public class GatesFragment extends Fragment {
     @Override
     public void onCreate (Bundle savedInstanceState) {
         mGateSites = new ArrayList<>();
+        mGateSites.add(new Site("Kofar Kansakali", R.drawable.kofar_kansakali_1,
+                getString(R.string.kofar_kansakali_link)));
         mGateSites.add(new Site("Kofar Nassarawa", R.drawable.kofar_nasarawa_2));
         mGateSites.add(new Site("Kofar Rumfa", R.drawable.kofar_rumfa_or_fada_3));
+
+
         super.onCreate(savedInstanceState);
     }
 
