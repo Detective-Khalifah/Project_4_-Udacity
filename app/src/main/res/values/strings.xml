@@ -78,4 +78,17 @@
     <string name="restaurant_3">Meena Restaurant</string>
     <string name="restaurant_4">Mr. Biggs</string>
     <string name="restaurant_5">Waffle Shop</string>
+
+    <!-- Market titles -->
+    <string name="market_1">\'Yankaba</string>
+    <string name="market_2">Bachirawa</string>
+    <string name="market_3">Dawanau</string>
+    <string name="market_4">Galadima</string>
+    <string name="market_5">Kantin Kwari</string>
+    <string name="market_6">Ƙofar Ruwa</string>
+    <string name="market_7">Kurmi</string>
+    <string name="market_8">Rimi</string>
+    <string name="market_9">Sabon Gari</string>
+    <string name="market_10">Ujile</string>
+    <string name="market_11">Wafa</string>
 </resources>

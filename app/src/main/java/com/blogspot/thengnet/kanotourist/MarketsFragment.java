@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -40,16 +41,17 @@ public class MarketsFragment extends Fragment {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mMarketsList = new ArrayList<>();
-        mMarketsList.add(new Site("'Yankaba"));
-        mMarketsList.add(new Site("Bachirawa"));
-        mMarketsList.add(new Site("Dawanau"));
-        mMarketsList.add(new Site("Galadima"));
-        mMarketsList.add(new Site("Ƙofar Ruwa"));
-        mMarketsList.add(new Site("Kurmi"));
-        mMarketsList.add(new Site("Rimi"));
-        mMarketsList.add(new Site("Sabon Gari"));
-        mMarketsList.add(new Site("Ujile"));
-        mMarketsList.add(new Site("Wafa"));
+        mMarketsList.add(new Site(getString(R.string.market_1)));
+        mMarketsList.add(new Site(getString(R.string.market_2)));
+        mMarketsList.add(new Site(getString(R.string.market_3)));
+        mMarketsList.add(new Site(getString(R.string.market_4)));
+        mMarketsList.add(new Site(getString(R.string.market_5)));
+        mMarketsList.add(new Site(getString(R.string.market_6)));
+        mMarketsList.add(new Site(getString(R.string.market_7)));
+        mMarketsList.add(new Site(getString(R.string.market_8)));
+        mMarketsList.add(new Site(getString(R.string.market_9)));
+        mMarketsList.add(new Site(getString(R.string.market_10)));
+        mMarketsList.add(new Site(getString(R.string.market_11)));
     }
 
     @Override
@@ -62,6 +64,10 @@ public class MarketsFragment extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        TextView txtMarketsIntro = (TextView) view.findViewById(R.id.location_intro);
+        txtMarketsIntro.setText(getString(R.string.markets_intro));
+
         final ListView listView = view.findViewById(R.id.list_sites);
         listView.setAdapter(new SiteAdapter(getContext(), mMarketsList));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
