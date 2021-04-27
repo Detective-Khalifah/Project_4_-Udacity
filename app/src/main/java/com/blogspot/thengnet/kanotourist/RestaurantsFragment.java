@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -40,11 +41,11 @@ public class RestaurantsFragment extends Fragment {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mRestaurantsList = new ArrayList<>();
-        mRestaurantsList.add(new Site("Cilantro Restaurant and Lounge"));
-        mRestaurantsList.add(new Site("Chicken Republic"));
-        mRestaurantsList.add(new Site("Meena Restaurant"));
-        mRestaurantsList.add(new Site("Mr. Biggs"));
-        mRestaurantsList.add(new Site("Waffle Shop"));
+        mRestaurantsList.add(new Site(getString(R.string.restaurant_1)));
+        mRestaurantsList.add(new Site(getString(R.string.restaurant_2)));
+        mRestaurantsList.add(new Site(getString(R.string.restaurant_3)));
+        mRestaurantsList.add(new Site(getString(R.string.restaurant_4)));
+        mRestaurantsList.add(new Site(getString(R.string.restaurant_5)));
 
     }
 
@@ -58,6 +59,10 @@ public class RestaurantsFragment extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        TextView txtRestaurantsIntro = (TextView) view.findViewById(R.id.location_intro);
+        txtRestaurantsIntro.setText(getString(R.string.restaurants_intro));
+
         final ListView listView = view.findViewById(R.id.list_sites);
         listView.setAdapter(new SiteAdapter(getContext(), mRestaurantsList));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -9,15 +9,18 @@
     <string name="fragment_hotels">Hotels</string>
     <string name="fragment_events">Events</string>
 
-    <string name="gates_intro">Fortifications built in days of old to defend these ancient mini-cities, that are now less than the size of a local government</string>
     <string name="gates_link">https://en.wikipedia.org/wiki/Gates_of_Hausa_kingdoms#Kano_Emirate</string>
     <string name="gates_further_read">Kano Emirate Gates [click to read]</string>
 
+    <!-- Site Intros-->
+    <string name="gates_intro">Fortifications built in days of old to defend these ancient mini-cities, that are now less than the size of a local government</string>
     <string name="historicals_intro">Landmarks of Kano - \"Ta Dabo tumbin giwa\"</string>
     <string name="hotels_intro">Time to rest my rump…</string>
     <string name="restaurants_intro">Let\'s eat…</string>
     <string name="markets_intro">Kano State is one of the few places which has remarkable supermarkets besides marketplaces that trace a more-than-century old age; nice places to shop, ny the way. These bustling spots will prove it\'s the centre of commerce.</string>
+    <string name="events_intro">Kano is a city populated mostly by Hausa natives. Culturally inherent festivals are… Well, why don\'t you come find out?</string>
 
+    <!-- Gate titles -->
     <string name="gate_1">Ƙofar Kansakali (1112)[image-Rumbun Ilimi]</string>
     <string name="gate_2">Ƙofar Waika (1112)</string>
     <string name="gate_3">Ƙofar Ɗanƙwai/Dawanau (1112) [image-Wikipedia]</string>
@@ -36,6 +39,7 @@
     <string name="gate_16">Ƙofar Alasan (1937)</string>
     <string name="gate_17">Ƙofar Fada [Wikipedia]</string>
 
+    <!-- Gate links for reference -->
     <string name="gate_1_link">https://www.rumbunilimi.com.ng/kanokofarkansakali.html#gsc.tab=0</string>
     <string name="gate_2_link">https://www.rumbunilimi.com.ng/kanokofarwaika.html</string>
     <string name="gate_3_link">https://www.rumbunilimi.com.ng/kanokofardawanau.html</string>
@@ -53,6 +57,7 @@
     <string name="gate_15_link">https://www.rumbunilimi.com.ng/kanokofarRumfa.html</string>
     <string name="gate_16_link">https://www.rumbunilimi.com.ng/kanokofaralasan.html</string>
 
+    <!-- Historic Site titles -->
     <string name="historic_1">Emir\'s Palace</string>
     <string name="historic_2">Dala Hill</string>
     <string name="historic_3">Gidan Makama Museum</string>
@@ -60,9 +65,17 @@
     <string name="historic_5">Gidan Dan Hausa Museum and Kano State Cultural Centre</string>
     <string name="historic_6">Bashir Tofa Mosque</string>
 
+    <!-- Hotel titles -->
     <string name="hotel_1">Bristol Palace Hotel</string>
     <string name="hotel_2">Prince Hotel</string>
     <string name="hotel_3">Porto Golf Hotel</string>
     <string name="hotel_4">R &amp; K Guest Palace</string>
     <string name="hotel_5">Tahir Guest Palace</string>
+
+    <!-- Restaurant titles -->
+    <string name="restaurant_1">Cilantro Restaurant and Lounge</string>
+    <string name="restaurant_2">Chicken Republic</string>
+    <string name="restaurant_3">Meena Restaurant</string>
+    <string name="restaurant_4">Mr. Biggs</string>
+    <string name="restaurant_5">Waffle Shop</string>
 </resources>
