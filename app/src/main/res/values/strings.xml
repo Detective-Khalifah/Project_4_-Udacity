@@ -91,4 +91,12 @@
     <string name="market_9">Sabon Gari</string>
     <string name="market_10">Ujile</string>
     <string name="market_11">Wafa</string>
+
+    <!-- Event titles -->
+    <string name="event_1">Hawan Daushe</string>
+    <string name="event_2">Hawan Ɗorayi</string>
+    <string name="event_3">Hawan Idi</string>
+    <string name="event_4">Hawan Fanisau</string>
+    <string name="event_5">Hawan Nassarawa</string>
+
 </resources>

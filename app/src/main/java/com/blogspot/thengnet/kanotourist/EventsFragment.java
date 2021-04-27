@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -40,11 +41,11 @@ public class EventsFragment extends Fragment {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mFestivalsList = new ArrayList<>();
-        mFestivalsList.add(new Site("Hawan Dause"));
-        mFestivalsList.add(new Site("Hawan Ɗorayi"));
-        mFestivalsList.add(new Site("Hawan Idi"));
-        mFestivalsList.add(new Site("Hawan Fanisau"));
-        mFestivalsList.add(new Site("Hawan Nassarawa"));
+        mFestivalsList.add(new Site(getString(R.string.event_1)));
+        mFestivalsList.add(new Site(getString(R.string.event_2)));
+        mFestivalsList.add(new Site(getString(R.string.event_3)));
+        mFestivalsList.add(new Site(getString(R.string.event_4)));
+        mFestivalsList.add(new Site(getString(R.string.event_5)));
     }
 
     @Override
@@ -57,6 +58,9 @@ public class EventsFragment extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        TextView txtEventsIntro = (TextView) view.findViewById(R.id.location_intro);
+        txtEventsIntro.setText(getString(R.string.events_intro));
 
         final ListView listView = view.findViewById(R.id.list_sites);
         listView.setAdapter(new SiteAdapter(getContext(), mFestivalsList));
