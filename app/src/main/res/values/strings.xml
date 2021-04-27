@@ -53,4 +53,11 @@
     <string name="gate_15_link">https://www.rumbunilimi.com.ng/kanokofarRumfa.html</string>
     <string name="gate_16_link">https://www.rumbunilimi.com.ng/kanokofaralasan.html</string>
 
+    <string name="historic_1">Emir\'s Palace</string>
+    <string name="historic_2">Dala Hill</string>
+    <string name="historic_3">Gidan Makama Museum</string>
+    <string name="historic_4">Kano Central Mosque</string>
+    <string name="historic_5">Gidan Dan Hausa Museum and Kano State Cultural Centre</string>
+    <string name="historic_6">Bashir Tofa Mosque</string>
+
 </resources>

@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -38,12 +39,12 @@ public class HistoricalsFragment extends Fragment {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         historicSitesList = new ArrayList<>();
-        historicSitesList.add(new Site("Emir's Palace"));
-        historicSitesList.add(new Site("Dala Hill"));
-        historicSitesList.add(new Site("Gidan Makama Museum"));
-        historicSitesList.add(new Site("Kano Central Mosque"));
-        historicSitesList.add(new Site("Gidan Dan Hausa Museum and Kano State Cultural Centre"));
-        historicSitesList.add(new Site("Bashir Tofa Mosque"));
+        historicSitesList.add(new Site(getString(R.string.historic_1)));
+        historicSitesList.add(new Site(getString(R.string.historic_2)));
+        historicSitesList.add(new Site(getString(R.string.historic_3)));
+        historicSitesList.add(new Site(getString(R.string.historic_4)));
+        historicSitesList.add(new Site(getString(R.string.historic_5)));
+        historicSitesList.add(new Site(getString(R.string.historic_6)));
     }
 
     @Override
@@ -56,6 +57,9 @@ public class HistoricalsFragment extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        TextView txtHistoricSitesIntro = (TextView) view.findViewById(R.id.location_intro);
+        txtHistoricSitesIntro.setText(getString(R.string.historicals_intro));
 
         final ListView listView = view.findViewById(R.id.list_sites);
         listView.setAdapter(new SiteAdapter(getContext(), historicSitesList));
