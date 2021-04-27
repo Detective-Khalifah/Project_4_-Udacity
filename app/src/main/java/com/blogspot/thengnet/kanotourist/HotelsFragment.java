@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -38,11 +39,11 @@ public class HotelsFragment extends Fragment {
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mHotelsList = new ArrayList<>();
-        mHotelsList.add(new Site("Bristol Palace Hotel"));
-        mHotelsList.add(new Site("Prince Hotel"));
-        mHotelsList.add(new Site("Porto Golf Hotel"));
-        mHotelsList.add(new Site("R & K Guest Palace"));
-        mHotelsList.add(new Site("Tahir Guest Palace"));
+        mHotelsList.add(new Site(getString(R.string.hotel_1)));
+        mHotelsList.add(new Site(getString(R.string.hotel_2)));
+        mHotelsList.add(new Site(getString(R.string.hotel_3)));
+        mHotelsList.add(new Site(getString(R.string.hotel_4)));
+        mHotelsList.add(new Site(getString(R.string.hotel_5)));
     }
 
     @Override
@@ -55,6 +56,10 @@ public class HotelsFragment extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        TextView txtHotelsIntro = (TextView) view.findViewById(R.id.location_intro);
+        txtHotelsIntro.setText(getString(R.string.hotels_intro));
+
         final ListView listView = view.findViewById(R.id.list_sites);
         listView.setAdapter(new SiteAdapter(getContext(), mHotelsList));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
